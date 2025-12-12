@@ -17,7 +17,6 @@ Shahzadpur Stables represents a legacy of Marwari horse excellence, with each ho
 - Visual showcase of stables and horses
 - Contact and enquiry information
 
----
 
 
 
