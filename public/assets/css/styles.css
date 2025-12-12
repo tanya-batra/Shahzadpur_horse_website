@@ -1,0 +1,147 @@
+:root{
+  --maroon:#5B0A0A;
+  --gold:#C8A048;
+}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif, 'Playfair Display', serif;;}
+.brand-title{font-family:"Playfair Display",serif;letter-spacing:.2px}
+.bg-maroon{background-color:var(--maroon)!important}
+.text-gold{color:var(--gold)!important}
+.btn-gold{background-color:var(--gold);border-color:var(--gold);color:#1b1b1b}
+.btn-gold:hover{background-color:#b38d3e;border-color:#b38d3e;color:#1b1b1b}
+.btn-outline-gold{border-color:var(--gold);color:var(--gold)}
+.btn-outline-gold:hover{background-color:var(--gold);color:#1b1b1b}
+.section-title{font-family:"Playfair Display",serif}
+.card-link{text-decoration:none}
+.card-link:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.bg-placeholder{background:linear-gradient(120deg,#eee,#ddd)}
+.hero{min-height:62vh;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat}
+.hero-title{font-family:"Playfair Display",serif}
+.timeline{position:relative;padding-left:1.5rem}
+.timeline:before{content:"";position:absolute;left:.5rem;top:0;bottom:0;width:2px;background:#e5e5e5}
+.timeline-item{position:relative;margin:1rem 0 1.5rem}
+.timeline-dot{position:absolute;left:-.05rem;top:.35rem;width:.75rem;height:.75rem;border-radius:50%;background:var(--gold)}
+
+/* Punjabi font for headings toggled via data attribute */
+[data-lang="pa"] .section-title,[data-lang="pa"] .brand-title{font-family:"Noto Sans Gurmukhi", sans-serif}
+
+  /* Navbar links hover effect */
+  .navbar-nav .nav-item {
+    position: relative;
+  }
+
+  .navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 0.3rem; /* Space for underline */
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #d4af37 !important; /* Gold color for hover */
+  }
+
+  .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d4af37; /* Gold underline */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+
+  .navbar-nav .nav-item:hover .nav-link::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/* === Footer Styling === */
+
+.footer {
+  background-color: #111;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer .footer-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d4af37; /* Gold */
+  margin-bottom: 0.8rem;
+}
+
+.footer h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d4af37;
+  position: relative;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #d4af3740;
+}
+
+.footer p,
+.footer a {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.footer a.footer-link {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer a.footer-link:hover {
+  color: #d4af37;
+  padding-left: 5px;
+}
+
+/* === Social Icons === */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.2rem;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #d4af37;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #d4af37;
+}
+
+/* === Gold Accent === */
+.text-gold {
+  color: #d4af37;
+}
+
+/* === Footer Bottom === */
+.footer-bottom {
+  margin-top: 2.5rem;
+  border-top: 1px solid #333;
+  padding-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
